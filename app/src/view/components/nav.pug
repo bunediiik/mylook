@@ -1,0 +1,16 @@
+nav.header__nav
+    .header__nav-next
+        a.header__nav-logo(href="#")
+            img(src="/images/logo.webp", alt="logo")
+    
+        -var links = [{href: '#', name: 'Кино и сериалы'}, {href: '#', name: 'Спорт'}, {href: '#', name: 'Детям'}]
+        ul.header__nav-list 
+            -for(var i = 0; i < links.length; i++)
+                li.header__nav-item 
+                    a(href= links[i].href, class="header__nav-item_link")= links[i].name
+    .header__nav-last
+        button.header__nav-btn  
+            img(src="/images/menu.svg", alt="")
+        a(href="#").header__nav-search 
+            img(src="/images/Search.webp", alt="")
+
